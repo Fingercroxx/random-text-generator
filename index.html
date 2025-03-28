@@ -113,6 +113,18 @@
                 <h3>Column 3</h3>
                 <textarea id="column3" placeholder="Enter words, one per line"></textarea>
             </div>
+            <div class="column">
+                <h3>Column 4</h3>
+                <textarea id="column4" placeholder="Enter words, one per line"></textarea>
+            </div>
+            <div class="column">
+                <h3>Column 5</h3>
+                <textarea id="column5" placeholder="Enter words, one per line"></textarea>
+            </div>
+            <div class="column">
+                <h3>Column 6</h3>
+                <textarea id="column6" placeholder="Enter words, one per line"></textarea>
+            </div>
         </div>
         <div class="button-container">
             <button onclick="generateText()">Generate Text</button>
@@ -128,7 +140,10 @@
             const columns = [
                 document.getElementById('column1').value.split('\n').filter(word => word.trim()),
                 document.getElementById('column2').value.split('\n').filter(word => word.trim()),
-                document.getElementById('column3').value.split('\n').filter(word => word.trim())
+                document.getElementById('column3').value.split('\n').filter(word => word.trim()),
+                document.getElementById('column4').value.split('\n').filter(word => word.trim()),
+                document.getElementById('column5').value.split('\n').filter(word => word.trim()),
+                document.getElementById('column6').value.split('\n').filter(word => word.trim())
             ];
 
             const result = columns
